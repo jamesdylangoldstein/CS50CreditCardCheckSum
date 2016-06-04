@@ -13,7 +13,7 @@ int main(void) {
     unsigned long long int creditcard, creditcardlength, digit1, digit2, digit3, digit4, digit5, digit6, digit7, digit8, digit9, digit10, digit11, digit12, digit13, digit14, digit15, digit16, digit1db, digit2db, digit3db, digit4db, digit5db, digit6db, digit7db, digit8db, digit9db, digit10db, digit11db, digit12db, digit13db, digit14db, digit15db, digit16db,creditcardmanip, luhnalgone, luhnalgtwo, luhnalgthree;
     
     do{
-        printf("Type your credit card number.\nMake sure it is 16 digits:\n");
+        printf("Type your credit card number.\nMake sure it is 13, 15, or 16 digits:\n");
 
         creditcard = GetLongLong();
 
@@ -44,38 +44,105 @@ int main(void) {
     
     creditcardmanip = creditcard;
     
-    digit1 = creditcardmanip/1000000000000000;
-    creditcardmanip = creditcardmanip - (digit1*1000000000000000);
-    digit2 = creditcardmanip/100000000000000;
-    creditcardmanip = creditcardmanip - (digit2*100000000000000);
-    digit3 = creditcardmanip/10000000000000;
-    creditcardmanip = creditcardmanip - (digit3*10000000000000);
-    digit4 = creditcardmanip/1000000000000;
-    creditcardmanip = creditcardmanip - (digit4*1000000000000);
-    digit5 = creditcardmanip/100000000000;
-    creditcardmanip = creditcardmanip - (digit5*100000000000);
-    digit6 = creditcardmanip/10000000000;
-    creditcardmanip = creditcardmanip - (digit6*10000000000);
-    digit7 = creditcardmanip/1000000000;
-    creditcardmanip = creditcardmanip - (digit7*1000000000);
-    digit8 = creditcardmanip/100000000;
-    creditcardmanip = creditcardmanip - (digit8*100000000);
-    digit9 = creditcardmanip/10000000;
-    creditcardmanip = creditcardmanip - (digit9*10000000);
-    digit10 = creditcardmanip/1000000;
-    creditcardmanip = creditcardmanip - (digit10*1000000);
-    digit11 = creditcardmanip/100000;
-    creditcardmanip = creditcardmanip - (digit11*100000);
-    digit12 = creditcardmanip/10000;
-    creditcardmanip = creditcardmanip - (digit12*10000);
-    digit13 = creditcardmanip/1000;
-    creditcardmanip = creditcardmanip - (digit13*1000);
-    digit14 = creditcardmanip/100;
-    creditcardmanip = creditcardmanip - (digit14*100);
-    digit15 = creditcardmanip/10;
-    creditcardmanip = creditcardmanip - (digit15*10);
-    digit16 = creditcardmanip/1;
-    creditcardmanip = creditcardmanip - (digit16*1);
+    if(creditcardlength == 16){
+        digit1 = creditcardmanip/1000000000000000;
+        creditcardmanip = creditcardmanip - (digit1*1000000000000000);
+        digit2 = creditcardmanip/100000000000000;
+        creditcardmanip = creditcardmanip - (digit2*100000000000000);
+        digit3 = creditcardmanip/10000000000000;
+        creditcardmanip = creditcardmanip - (digit3*10000000000000);
+        digit4 = creditcardmanip/1000000000000;
+        creditcardmanip = creditcardmanip - (digit4*1000000000000);
+        digit5 = creditcardmanip/100000000000;
+        creditcardmanip = creditcardmanip - (digit5*100000000000);
+        digit6 = creditcardmanip/10000000000;
+        creditcardmanip = creditcardmanip - (digit6*10000000000);
+        digit7 = creditcardmanip/1000000000;
+        creditcardmanip = creditcardmanip - (digit7*1000000000);
+        digit8 = creditcardmanip/100000000;
+        creditcardmanip = creditcardmanip - (digit8*100000000);
+        digit9 = creditcardmanip/10000000;
+        creditcardmanip = creditcardmanip - (digit9*10000000);
+        digit10 = creditcardmanip/1000000;
+        creditcardmanip = creditcardmanip - (digit10*1000000);
+        digit11 = creditcardmanip/100000;
+        creditcardmanip = creditcardmanip - (digit11*100000);
+        digit12 = creditcardmanip/10000;
+        creditcardmanip = creditcardmanip - (digit12*10000);
+        digit13 = creditcardmanip/1000;
+        creditcardmanip = creditcardmanip - (digit13*1000);
+        digit14 = creditcardmanip/100;
+        creditcardmanip = creditcardmanip - (digit14*100);
+        digit15 = creditcardmanip/10;
+        creditcardmanip = creditcardmanip - (digit15*10);
+        digit16 = creditcardmanip/1;
+        creditcardmanip = creditcardmanip - (digit16*1);
+    }
+    else if (creditcardlength == 15){
+        digit1 = creditcardmanip/100000000000000;
+        creditcardmanip = creditcardmanip - (digit1*100000000000000);
+        digit2 = creditcardmanip/10000000000000;
+        creditcardmanip = creditcardmanip - (digit2*10000000000000);
+        digit3 = creditcardmanip/1000000000000;
+        creditcardmanip = creditcardmanip - (digit3*1000000000000);
+        digit4 = creditcardmanip/100000000000;
+        creditcardmanip = creditcardmanip - (digit4*100000000000);
+        digit5 = creditcardmanip/10000000000;
+        creditcardmanip = creditcardmanip - (digit5*10000000000);
+        digit6 = creditcardmanip/1000000000;
+        creditcardmanip = creditcardmanip - (digit6*1000000000);
+        digit7 = creditcardmanip/100000000;
+        creditcardmanip = creditcardmanip - (digit7*100000000);
+        digit8 = creditcardmanip/10000000;
+        creditcardmanip = creditcardmanip - (digit8*10000000);
+        digit9 = creditcardmanip/1000000;
+        creditcardmanip = creditcardmanip - (digit9*1000000);
+        digit10 = creditcardmanip/100000;
+        creditcardmanip = creditcardmanip - (digit10*100000);
+        digit11 = creditcardmanip/10000;
+        creditcardmanip = creditcardmanip - (digit11*10000);
+        digit12 = creditcardmanip/1000;
+        creditcardmanip = creditcardmanip - (digit12*1000);
+        digit13 = creditcardmanip/100;
+        creditcardmanip = creditcardmanip - (digit13*100);
+        digit14 = creditcardmanip/10;
+        creditcardmanip = creditcardmanip - (digit14*10);
+        digit15 = creditcardmanip/1;
+        creditcardmanip = creditcardmanip - (digit15*1);
+    }
+    else if (creditcardlength == 13){
+        digit1 = creditcardmanip/100000000000000;
+        creditcardmanip = creditcardmanip - (digit1*100000000000000);
+        digit2 = creditcardmanip/10000000000000;
+        creditcardmanip = creditcardmanip - (digit2*10000000000000);
+        digit3 = creditcardmanip/1000000000000;
+        creditcardmanip = creditcardmanip - (digit3*1000000000000);
+        digit4 = creditcardmanip/100000000000;
+        creditcardmanip = creditcardmanip - (digit4*100000000000);
+        digit5 = creditcardmanip/10000000000;
+        creditcardmanip = creditcardmanip - (digit5*10000000000);
+        digit6 = creditcardmanip/1000000000;
+        creditcardmanip = creditcardmanip - (digit6*1000000000);
+        digit7 = creditcardmanip/100000000;
+        creditcardmanip = creditcardmanip - (digit7*100000000);
+        digit8 = creditcardmanip/10000000;
+        creditcardmanip = creditcardmanip - (digit8*10000000);
+        digit9 = creditcardmanip/1000000;
+        creditcardmanip = creditcardmanip - (digit9*1000000);
+        digit10 = creditcardmanip/100000;
+        creditcardmanip = creditcardmanip - (digit10*100000);
+        digit11 = creditcardmanip/10000;
+        creditcardmanip = creditcardmanip - (digit11*10000);
+        digit12 = creditcardmanip/1000;
+        creditcardmanip = creditcardmanip - (digit12*1000);
+        digit13 = creditcardmanip/100;
+        creditcardmanip = creditcardmanip - (digit13*100);
+        digit14 = creditcardmanip/10;
+        creditcardmanip = creditcardmanip - (digit14*10);
+        digit15 = creditcardmanip/1;
+        creditcardmanip = creditcardmanip - (digit15*1);
+    }
+
     
     if((digit1 == 3 && digit2 == 4) || (digit1 == 3 && digit2 == 7)){
         printf("This is an American Express card.\n");
