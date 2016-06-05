@@ -10,7 +10,7 @@
 #include "cs50.h"
 
 int main(void) {
-    unsigned long long int creditcard, creditcardlength, digit1, digit2, digit3, digit4, digit5, digit6, digit7, digit8, digit9, digit10, digit11, digit12, digit13, digit14, digit15, digit16, digit1db, digit2db, digit3db, digit4db, digit5db, digit6db, digit7db, digit8db, digit9db, digit10db, digit11db, digit12db, digit13db, digit14db, digit15db, digit16db,creditcardmanip, luhnalgone, luhnalgtwo, luhnalgthree;
+    unsigned long long creditcard, creditcardlength, digit1, digit2, digit3, digit4, digit5, digit6, digit7, digit8, digit9, digit10, digit11, digit12, digit13, digit14, digit15, digit16, digit1db, digit2db, digit3db, digit4db, digit5db, digit6db, digit7db, digit8db, digit9db, digit10db, digit11db, digit12db, digit13db, digit14db, digit15db, digit16db,creditcardmanip, luhnalgone, luhnalgtwo, luhnalgthree;
     
     do{
         printf("Type your credit card number.\nMake sure it is 13, 15, or 16 digits:\n");
